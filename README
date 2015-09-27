@@ -1,0 +1,11 @@
+# tutch
+tutch is a tool for checking constructive proofs
+
+I'm not the developer of this software.
+The official website can be found here:
+    http://www2.tcs.ifi.lmu.de/~abel/tutch/.
+This repo is almost an exact copy of the sources for tutch-0.52
+you can find on their website, with a few differences being
+that it is made to be compiled by MLton rather than smlnj.
+It requires the MLSuccessor features of MLton, so a 2015 version
+of MLton must be used.
