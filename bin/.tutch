@@ -1,3 +1,0 @@
-#!/bin/sh
-%SML @SMLload=%TUTCHDIR/bin/.heap/tutch \
-     @SMLdebug=/dev/null $*

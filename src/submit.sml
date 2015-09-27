@@ -30,7 +30,7 @@ struct
           val cmdStr = "cp -p "^filesStr^destDir
           val status = OS.Process.system (cmdStr)
       in 
-	  if status <> OS.Process.success then raise Error 
+	  if not (OS.Process.isSuccess status) then raise Error
              "Cannot submit tutch files."
           (* ("Could not submit files. Execution of `" ^ cmdStr ^ "` failed")*)
 	  else () 

@@ -1,7 +1,7 @@
 signature GLOBAL =
 sig
 
-  type result = OS.Process.status
+  type result = int
 
   exception Error of string * result
 
@@ -36,7 +36,7 @@ end (* signature GLOBAL *)
 structure Global :> GLOBAL =
 struct
 
-  type result = OS.Process.status
+  type result = int
 
   exception Error of string * result
 

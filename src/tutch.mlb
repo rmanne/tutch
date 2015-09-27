@@ -1,0 +1,52 @@
+$(SML_LIB)/smlnj-lib/smlnj-lib.mlb
+$(SML_LIB)/basis/basis.mlb
+
+ann "allowSigWithtype true" in
+  local
+    stream.sml
+    istream.sml
+    cxt.sml
+    names.sml
+    exp.sml
+    uexp.sml
+    val.sml
+    uval.sml
+    proof.sml
+    prop.sml
+    term.sml
+    ann-proof.sml
+    region.sml
+    regtree.sml
+    path.sml
+    token.sml
+    parsing.sml
+    syntax.sml
+    paths.sml
+    proofs.sml
+    extsyn.sml
+    chatter.sml
+    global.sml
+    check-exp.sml
+    check-proof.sml
+    check-ann-proof.sml
+    check-term.sml
+    check-dep.sml
+    spec.sml
+    spec-check.sml
+    decl.sml
+    lexer.sml
+    fixity.sml
+    parse-prop.sml
+    parse-term.sml
+    parse-exp.sml
+    parse-proof.sml
+    parser.sml
+    parse-spec.sml
+    oslib.sml
+    submit.sml
+    reqfile.sml
+    top.sml
+  in
+    structure Top
+  end
+end

@@ -3,8 +3,8 @@
 signature TOP =
 sig
 
-  val top : string * string list -> OS.Process.status
-  val debug : string list -> OS.Process.status
+  val top : string * string list -> int
+  val debug : string list -> int
 
 end; (* signature TOP *)
 
@@ -141,7 +141,7 @@ struct
 	  val _       = saveValidation (valName)
 	  val _       = if Chatter.actions() then print (
             "Validation of submission saved in file "^valName^"\n") else ()
-      in OS.Process.success end
+      in 0 end
       
   (*  run : string list * string * bool -> OS.Process.status
   *)
@@ -268,5 +268,7 @@ struct
 	| Validate (name) => validateSubmission (name)
 	| Run (files, reqKern, submit) => run (files, reqKern, submit)
     end 
+
+    val _ = top (CommandLine.name(), CommandLine.arguments())
 
 end; (* structure Top *)
